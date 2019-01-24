@@ -250,9 +250,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   availableRoads:
+  - {fileID: 1020594377253624, guid: abe1154dff93dec41a8c786fc3230423, type: 2}
+  - {fileID: 1402226401469558, guid: 95329de9d54959f4d95ee28e34bad0c8, type: 2}
+  - {fileID: 1534903505977348, guid: 826e4f4a9a3a3564a800aefca38a2529, type: 2}
+  - {fileID: 1609403078986880, guid: 29bd4cb8b9f64804ea2f612ee54f5ff0, type: 2}
   - {fileID: 1884822058184834, guid: 730a29ce74d9c374fa839cf5f3a252d2, type: 2}
   availableStops:
   - {fileID: 1983949473663286, guid: 77bd93ff69d1400478c6be0115075d9f, type: 2}
+  - {fileID: 1605349978621770, guid: 554edb67ac121b04a8c27f81ab80549f, type: 2}
   nextSegment: {fileID: 1538897755}
   DCToSpawnStop: 80
   distanceToSpawnNextRoad: 80
