@@ -14,7 +14,8 @@ public class DayNightCycle : MonoBehaviour
     public Color[] cloudShadowColors;
     private int currentIndex, nextIndex;
     private Color skyColor, equatorColor, cloudLightColor, cloudShadowColor;
-    
+    private float starsHeight;
+
     private float t;
     
 	void Start ()
@@ -27,10 +28,13 @@ public class DayNightCycle : MonoBehaviour
 
         currentIndex = 0; nextIndex = 1;
 
+        starsHeight = 1;
+
         m.SetColor("_SkyColor", skyColor);
         m.SetColor("_EquatorColor", equatorColor);
         m.SetColor("_CloudsLightColor", cloudLightColor);
         m.SetColor("_CloudsShadowColor", cloudShadowColor);
+        m.SetFloat("_StarsHeightMask", starsHeight);
 	}
 	
 	void Update ()
@@ -50,10 +54,21 @@ public class DayNightCycle : MonoBehaviour
                 nextIndex = 0;
             t = 0;
         }
+        if (currentIndex == 1)
+        {
+            if (starsHeight > 0.17)
+                starsHeight -= Time.deltaTime;
+        }
+        if (currentIndex == 2)
+        {
+            if (starsHeight < 1)
+                starsHeight += Time.deltaTime;
+        }
 
         m.SetColor("_SkyColor", skyColor);
         m.SetColor("_EquatorColor", equatorColor);
         m.SetColor("_CloudsLightColor", cloudLightColor);
         m.SetColor("_CloudsShadowColor", cloudShadowColor);
+        m.SetFloat("_StarsHeightMask", starsHeight);
 	}
 }
