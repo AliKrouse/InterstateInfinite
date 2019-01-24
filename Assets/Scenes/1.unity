@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1823747510}
-  m_IndirectSpecularColor: {r: 0.45829254, g: 0.48137784, b: 0.47543472, a: 1}
+  m_IndirectSpecularColor: {r: 0.20192727, g: 0.38801742, b: 0.4647119, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -168,6 +168,7 @@ GameObject:
   - component: {fileID: 790573445}
   - component: {fileID: 790573450}
   - component: {fileID: 790573449}
+  - component: {fileID: 790573451}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -294,6 +295,39 @@ MonoBehaviour:
   - {fileID: 2100000, guid: fbf9288f7998d804ca0d29ecc3c7237f, type: 2}
   - {fileID: 2100000, guid: 17dfbb12914f3f94cb8ddc343d7f3f70, type: 2}
   - {fileID: 2100000, guid: 82a2b4b8ae594f14a8ec099a1ab24790, type: 2}
+--- !u!114 &790573451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 790573444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cb3b707645914340baa72e06080b7eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayLength: 2
+  m: {fileID: 2100000, guid: 325d7aba7dab67c4c923fc96301e2d40, type: 2}
+  skyColors:
+  - {r: 0.27205884, g: 0.6987828, b: 1, a: 0}
+  - {r: 0.22599483, g: 0.36603823, b: 0.6985294, a: 0}
+  - {r: 0.1278655, g: 0.1827896, b: 0.31617647, a: 0}
+  - {r: 0.3602941, g: 0.46538, b: 0.7205882, a: 0}
+  equatorColors:
+  - {r: 0.45588237, g: 0.90993935, b: 1, a: 0}
+  - {r: 1, g: 0.26896554, b: 0, a: 0}
+  - {r: 0.26201275, g: 0.25789362, b: 0.3897059, a: 0}
+  - {r: 0.88235295, g: 0.48010382, b: 0.48010382, a: 0}
+  cloudLightColors:
+  - {r: 1, g: 1, b: 1, a: 0}
+  - {r: 0.50735295, g: 0.3096345, b: 0.3096345, a: 0}
+  - {r: 0.4157149, g: 0.41252163, b: 0.5147059, a: 0}
+  - {r: 0.7238488, g: 0.7201557, b: 0.8161765, a: 0}
+  cloudShadowColors:
+  - {r: 0.4, g: 0.5568628, b: 0.7882353, a: 1}
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 0.06157527, g: 0.02735726, b: 0.16911763, a: 0}
+  - {r: 0.9705882, g: 0.6708477, b: 0.6708477, a: 0}
 --- !u!1 &1211456073
 GameObject:
   m_ObjectHideFlags: 0

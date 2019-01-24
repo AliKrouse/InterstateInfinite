@@ -18,7 +18,7 @@ public class CreatePlayer : MonoBehaviour
         if (choice == 1)
             player.transform.GetChild(0).GetComponent<MeshRenderer>().material = truckColors[Random.Range(0, truckColors.Length)];
         if (choice == 2)
-            player.transform.GetChild(0).GetComponent<MeshRenderer>().material = suvColors[Random.Range(0, truckColors.Length)];
+            player.transform.GetChild(0).GetComponent<MeshRenderer>().material = suvColors[Random.Range(0, suvColors.Length)];
         transform.parent = player.transform;
         Destroy(this);
 	}
