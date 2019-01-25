@@ -123,7 +123,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _StarsHeightMask: 1.0664885
+    - _StarsHeightMask: 1.0111368
     - _StarsIntensity: 2
     - _StarsLayer: 3
     - _StarsSize: 0.5
@@ -136,14 +136,14 @@ Material:
     - _ZWrite: 1
     - __dirty: 1
     m_Colors:
-    - _CloudsLightColor: {r: 0.93548554, g: 0.93462276, b: 0.95705515, a: 0}
-    - _CloudsShadowColor: {r: 0.5333008, g: 0.5834919, b: 0.7608112, a: 0.76638}
+    - _CloudsLightColor: {r: 0.8070672, g: 0.804487, b: 0.87157184, a: 0}
+    - _CloudsShadowColor: {r: 0.79864097, g: 0.6364983, b: 0.70622253, a: 0.3013508}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EquatorColor: {r: 0.5555144, g: 0.8095212, b: 0.8785419, a: 0}
+    - _EquatorColor: {r: 0.7538357, g: 0.6096351, b: 0.63677496, a: 0}
     - _GroundColor: {r: 0, g: 0, b: 0, a: 1}
     - _MoonColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SkyColor: {r: 0.29267237, g: 0.6442552, b: 0.9347238, a: 0}
+    - _SkyColor: {r: 0.33370435, g: 0.5357161, b: 0.8047892, a: 0}
     - _SunColor: {r: 1, g: 1, b: 1, a: 1}
     - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
     - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}

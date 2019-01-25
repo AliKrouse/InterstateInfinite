@@ -17,6 +17,8 @@ public class DayNightCycle : MonoBehaviour
     private float starsHeight;
 
     private float t;
+
+    public GameObject light;
     
 	void Start ()
     {
@@ -64,6 +66,8 @@ public class DayNightCycle : MonoBehaviour
             if (starsHeight < 1)
                 starsHeight += Time.deltaTime;
         }
+
+        light.transform.Rotate(Vector3.right, Time.deltaTime * 90 / dayLength);
 
         m.SetColor("_SkyColor", skyColor);
         m.SetColor("_EquatorColor", equatorColor);
